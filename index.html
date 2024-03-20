@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Start project</title>
+</head>
+
+<body>
+	<header class="container header" id="header">
+		<a class="header__logo">
+			<div class="header__logo-img rotate-center">
+				<img src="img/icons/logo.svg" alt="logo">
+			</div>
+			<h2 class="header__logo-title">Zone.</h2>
+		</a>
+		<div class="header__nav">
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a" href="/">Home</a></li>
+				<li class="header__li"><a class="header__a" href="/">About Us</a></li>
+				<li class="header__li"><a class="header__a" href="/">Service</a></li>
+				<li class="header__li"><a class="header__a" href="/">Pricing</a></li>
+				<li class="header__li"><a class="header__a" href="/">Blog</a></li>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+			</ul>
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+			<a href="#footer" class="btn header__btn">Contact Us</a>
+		</div>
+	</header>
+
+	<div class="container" id="container">
+		<section class="welcome">
+			<div class="welcome__info slide-in-top">
+				<h1 class="welcome__title">Virtual Reality Business Solutions</h1>
+				<div class="welcome__desc">We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.</div>
+				<div class="welcome__nav">
+					<a href="#subscribe" class="btn welcome__join heartbeat">Join Us</a>
+					<a href="/" class="btn welcome__watch">
+						<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M18 3C26.2845 3 33 9.7155 33 18C33 26.2845 26.2845 33 18 33C9.7155 33 3 26.2845 3 18C3 9.7155 9.7155 3 18 3ZM18 6C14.8174 6 11.7652 7.26428 9.51472 9.51472C7.26428 11.7652 6 14.8174 6 18C6 21.1826 7.26428 24.2348 9.51472 26.4853C11.7652 28.7357 14.8174 30 18 30C21.1826 30 24.2348 28.7357 26.4853 26.4853C28.7357 24.2348 30 21.1826 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51472C24.2348 7.26428 21.1826 6 18 6ZM15.756 10.704L24.756 16.704C24.9681 16.8275 25.1467 17.0012 25.276 17.2099C25.4053 17.4185 25.4815 17.6557 25.4978 17.9007C25.5141 18.1456 25.47 18.3908 25.3694 18.6147C25.2689 18.8386 25.1149 19.0345 24.921 19.185L15.756 25.296C15.528 25.429 15.269 25.4995 15.0051 25.5004C14.7412 25.5013 14.4817 25.4326 14.2528 25.3011C14.024 25.1696 13.8338 24.9801 13.7017 24.7517C13.5695 24.5232 13.4999 24.2639 13.5 24V12C13.4999 11.7361 13.5695 11.4768 13.7017 11.2483C13.8338 11.0199 14.024 10.8304 14.2528 10.6989C14.4817 10.5674 14.7412 10.4987 15.0051 10.4996C15.269 10.5005 15.528 10.571 15.756 10.704Z" fill="white" />
+						</svg>
+						<span>Watch video</span>
+					</a>
+				</div>
+			</div>
+			<div class="welcome__img slide-in-top">
+				<img src="img/welcome.png" alt="Welcome">
+			</div>
+		</section>
+
+		<section class="service">
+			<h2 class="title service__title">Our Service</h2>
+			<p class="desc service__desc">We turn information into actionable insights We work to understand your issues	and are driven to ask better questions in the pursuit of making work.</p>
+			<div class="service-list">
+				<div class="service-list__item">
+					<div class="service-list__item-icon" id="bg_checklist_ico">
+						<img src="img/icons/service/checklist.svg" alt="service icon">
+					</div>
+					<h3 class="service-list__item-title">Order Management</h3>
+					<p class="desc service-list__item-desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a href="/" class="desc service-list__item-forward">
+						Learn more
+						<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.121 0.292787C7.93353 0.480314 7.82821 0.734622 7.82821 0.999786C7.82821 1.26495 7.93353 1.51926 8.121 1.70679L11.413 4.99979L1 5.00679C0.734784 5.00679 0.48043 5.11214 0.292893 5.29968C0.105357 5.48722 0 5.74157 0 6.00679C0 6.272 0.105357 6.52636 0.292893 6.71389C0.48043 6.90143 0.734784 7.00679 1 7.00679L11.414 6.99979L8.121 10.2928C8.02549 10.385 7.94931 10.4954 7.8969 10.6174C7.84449 10.7394 7.8169 10.8706 7.81575 11.0034C7.8146 11.1362 7.8399 11.2678 7.89018 11.3907C7.94046 11.5136 8.01471 11.6253 8.10861 11.7192C8.2025 11.8131 8.31415 11.8873 8.43705 11.9376C8.55994 11.9879 8.69162 12.0132 8.8244 12.012C8.95718 12.0109 9.0884 11.9833 9.2104 11.9309C9.33241 11.8785 9.44275 11.8023 9.535 11.7068L13.121 8.12179C13.3996 7.8432 13.6207 7.51246 13.7715 7.14845C13.9222 6.78444 13.9999 6.39429 13.9999 6.00029C13.9999 5.60628 13.9222 5.21613 13.7715 4.85212C13.6207 4.48811 13.3996 4.15737 13.121 3.87879L9.535 0.292787C9.34747 0.105316 9.09316 0 8.828 0C8.56284 0 8.30853 0.105316 8.121 0.292787Z" fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="service-list__item">
+					<div class="service-list__item-icon" id="bg_social-assist_ico">
+						<img src="img/icons/service/social_assist.svg" alt="service icon">
+					</div>
+					<h3 class="service-list__item-title">Social Assistant</h3>
+					<p class="desc service-list__item-desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a href="/" class="desc service-list__item-forward">
+						Learn more
+						<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.121 0.292787C7.93353 0.480314 7.82821 0.734622 7.82821 0.999786C7.82821 1.26495 7.93353 1.51926 8.121 1.70679L11.413 4.99979L1 5.00679C0.734784 5.00679 0.48043 5.11214 0.292893 5.29968C0.105357 5.48722 0 5.74157 0 6.00679C0 6.272 0.105357 6.52636 0.292893 6.71389C0.48043 6.90143 0.734784 7.00679 1 7.00679L11.414 6.99979L8.121 10.2928C8.02549 10.385 7.94931 10.4954 7.8969 10.6174C7.84449 10.7394 7.8169 10.8706 7.81575 11.0034C7.8146 11.1362 7.8399 11.2678 7.89018 11.3907C7.94046 11.5136 8.01471 11.6253 8.10861 11.7192C8.2025 11.8131 8.31415 11.8873 8.43705 11.9376C8.55994 11.9879 8.69162 12.0132 8.8244 12.012C8.95718 12.0109 9.0884 11.9833 9.2104 11.9309C9.33241 11.8785 9.44275 11.8023 9.535 11.7068L13.121 8.12179C13.3996 7.8432 13.6207 7.51246 13.7715 7.14845C13.9222 6.78444 13.9999 6.39429 13.9999 6.00029C13.9999 5.60628 13.9222 5.21613 13.7715 4.85212C13.6207 4.48811 13.3996 4.15737 13.121 3.87879L9.535 0.292787C9.34747 0.105316 9.09316 0 8.828 0C8.56284 0 8.30853 0.105316 8.121 0.292787Z" fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="service-list__item">
+					<div class="service-list__item-icon" id="bg_bitcoin_ico">
+						<img src="img/icons/service/bitcoin.svg" alt="service icon">
+					</div>
+					<h3 class="service-list__item-title">Crypto Platform</h3>
+					<p class="desc service-list__item-desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a href="/" class="desc service-list__item-forward">
+						Learn more
+						<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.121 0.292787C7.93353 0.480314 7.82821 0.734622 7.82821 0.999786C7.82821 1.26495 7.93353 1.51926 8.121 1.70679L11.413 4.99979L1 5.00679C0.734784 5.00679 0.48043 5.11214 0.292893 5.29968C0.105357 5.48722 0 5.74157 0 6.00679C0 6.272 0.105357 6.52636 0.292893 6.71389C0.48043 6.90143 0.734784 7.00679 1 7.00679L11.414 6.99979L8.121 10.2928C8.02549 10.385 7.94931 10.4954 7.8969 10.6174C7.84449 10.7394 7.8169 10.8706 7.81575 11.0034C7.8146 11.1362 7.8399 11.2678 7.89018 11.3907C7.94046 11.5136 8.01471 11.6253 8.10861 11.7192C8.2025 11.8131 8.31415 11.8873 8.43705 11.9376C8.55994 11.9879 8.69162 12.0132 8.8244 12.012C8.95718 12.0109 9.0884 11.9833 9.2104 11.9309C9.33241 11.8785 9.44275 11.8023 9.535 11.7068L13.121 8.12179C13.3996 7.8432 13.6207 7.51246 13.7715 7.14845C13.9222 6.78444 13.9999 6.39429 13.9999 6.00029C13.9999 5.60628 13.9222 5.21613 13.7715 4.85212C13.6207 4.48811 13.3996 4.15737 13.121 3.87879L9.535 0.292787C9.34747 0.105316 9.09316 0 8.828 0C8.56284 0 8.30853 0.105316 8.121 0.292787Z" fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="service-list__item">
+					<div class="service-list__item-icon" id="bg_smart-trade_ico">
+						<img src="img/icons/service/smart_trade.svg" alt="service icon">
+					</div>
+					<h3 class="service-list__item-title">Smart Trading Modules</h3>
+					<p class="desc service-list__item-desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a href="/" class="desc service-list__item-forward">
+						Learn more
+						<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.121 0.292787C7.93353 0.480314 7.82821 0.734622 7.82821 0.999786C7.82821 1.26495 7.93353 1.51926 8.121 1.70679L11.413 4.99979L1 5.00679C0.734784 5.00679 0.48043 5.11214 0.292893 5.29968C0.105357 5.48722 0 5.74157 0 6.00679C0 6.272 0.105357 6.52636 0.292893 6.71389C0.48043 6.90143 0.734784 7.00679 1 7.00679L11.414 6.99979L8.121 10.2928C8.02549 10.385 7.94931 10.4954 7.8969 10.6174C7.84449 10.7394 7.8169 10.8706 7.81575 11.0034C7.8146 11.1362 7.8399 11.2678 7.89018 11.3907C7.94046 11.5136 8.01471 11.6253 8.10861 11.7192C8.2025 11.8131 8.31415 11.8873 8.43705 11.9376C8.55994 11.9879 8.69162 12.0132 8.8244 12.012C8.95718 12.0109 9.0884 11.9833 9.2104 11.9309C9.33241 11.8785 9.44275 11.8023 9.535 11.7068L13.121 8.12179C13.3996 7.8432 13.6207 7.51246 13.7715 7.14845C13.9222 6.78444 13.9999 6.39429 13.9999 6.00029C13.9999 5.60628 13.9222 5.21613 13.7715 4.85212C13.6207 4.48811 13.3996 4.15737 13.121 3.87879L9.535 0.292787C9.34747 0.105316 9.09316 0 8.828 0C8.56284 0 8.30853 0.105316 8.121 0.292787Z" fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="service-list__item">
+					<div class="service-list__item-icon" id="bg_analyzer_ico">
+						<img src="img/icons/service/analyzer.svg" alt="service icon">
+					</div>
+					<h3 class="service-list__item-title">Analyzer of the News</h3>
+					<p class="desc service-list__item-desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a href="/" class="desc service-list__item-forward">
+						Learn more
+						<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.121 0.292787C7.93353 0.480314 7.82821 0.734622 7.82821 0.999786C7.82821 1.26495 7.93353 1.51926 8.121 1.70679L11.413 4.99979L1 5.00679C0.734784 5.00679 0.48043 5.11214 0.292893 5.29968C0.105357 5.48722 0 5.74157 0 6.00679C0 6.272 0.105357 6.52636 0.292893 6.71389C0.48043 6.90143 0.734784 7.00679 1 7.00679L11.414 6.99979L8.121 10.2928C8.02549 10.385 7.94931 10.4954 7.8969 10.6174C7.84449 10.7394 7.8169 10.8706 7.81575 11.0034C7.8146 11.1362 7.8399 11.2678 7.89018 11.3907C7.94046 11.5136 8.01471 11.6253 8.10861 11.7192C8.2025 11.8131 8.31415 11.8873 8.43705 11.9376C8.55994 11.9879 8.69162 12.0132 8.8244 12.012C8.95718 12.0109 9.0884 11.9833 9.2104 11.9309C9.33241 11.8785 9.44275 11.8023 9.535 11.7068L13.121 8.12179C13.3996 7.8432 13.6207 7.51246 13.7715 7.14845C13.9222 6.78444 13.9999 6.39429 13.9999 6.00029C13.9999 5.60628 13.9222 5.21613 13.7715 4.85212C13.6207 4.48811 13.3996 4.15737 13.121 3.87879L9.535 0.292787C9.34747 0.105316 9.09316 0 8.828 0C8.56284 0 8.30853 0.105316 8.121 0.292787Z" fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="service-list__item">
+					<div class="service-list__item-icon" id="bg_price-module_ico">
+						<img src="img/icons/service/price_module.svg" alt="service icon">
+					</div>
+					<h3 class="service-list__item-title">Module of Price Notification</h3>
+					<p class="desc service-list__item-desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a href="/" class="desc service-list__item-forward">
+						Learn more
+						<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.121 0.292787C7.93353 0.480314 7.82821 0.734622 7.82821 0.999786C7.82821 1.26495 7.93353 1.51926 8.121 1.70679L11.413 4.99979L1 5.00679C0.734784 5.00679 0.48043 5.11214 0.292893 5.29968C0.105357 5.48722 0 5.74157 0 6.00679C0 6.272 0.105357 6.52636 0.292893 6.71389C0.48043 6.90143 0.734784 7.00679 1 7.00679L11.414 6.99979L8.121 10.2928C8.02549 10.385 7.94931 10.4954 7.8969 10.6174C7.84449 10.7394 7.8169 10.8706 7.81575 11.0034C7.8146 11.1362 7.8399 11.2678 7.89018 11.3907C7.94046 11.5136 8.01471 11.6253 8.10861 11.7192C8.2025 11.8131 8.31415 11.8873 8.43705 11.9376C8.55994 11.9879 8.69162 12.0132 8.8244 12.012C8.95718 12.0109 9.0884 11.9833 9.2104 11.9309C9.33241 11.8785 9.44275 11.8023 9.535 11.7068L13.121 8.12179C13.3996 7.8432 13.6207 7.51246 13.7715 7.14845C13.9222 6.78444 13.9999 6.39429 13.9999 6.00029C13.9999 5.60628 13.9222 5.21613 13.7715 4.85212C13.6207 4.48811 13.3996 4.15737 13.121 3.87879L9.535 0.292787C9.34747 0.105316 9.09316 0 8.828 0C8.56284 0 8.30853 0.105316 8.121 0.292787Z" fill="white"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="project-item slide-in-top">
+				<div class="project-item__img">
+					<img src="img/project1.png" alt="project1">
+				</div>
+				<div class="project-item__info">
+					<h2 class="title project-item__title">We complete every projects extra care as customer need</h2>
+					<p class="desc project-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magfini, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. </p>
+					<a href="/" class="btn project-item__btn">Read more</a>
+				</div>
+			</div>
+			<div class="project-item slide-in-top">
+				<div class="project-item__img">
+					<img src="img/project2.png" alt="project2">
+				</div>
+				<div class="project-item__info">
+					<h2 class="title project-item__title">We complete every projects extra care as customer need</h2>
+					<p class="desc project-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magfini, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. </p>
+					<a href="/" class="btn project-item__btn">Read more</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="team">
+			<h2 class="title team__title">Met Our Team</h2>
+			<p class="desc team__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+			<div class="team-list">
+				<div class="team-list__person">
+					<div class="team-list__person-photo">
+						<img src="img/avatars/khan.png" alt="person-photo">
+					</div>
+					<div class="team-list__person-name">Sunny Khan</div>
+					<div class="desc team-list__person-job">EXECUTIVE OFFICER</div>
+					<div class="team-list__person-social">
+						<img src="img/icons/social/skype.svg" alt="skype">
+						<img src="img/icons/social/linkedin.svg" alt="linkedin">
+						<img src="img/icons/social/twitter.svg" alt="twitter">
+						<img src="img/icons/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+				<div class="team-list__person">
+					<div class="team-list__person-photo">
+						<img src="img/avatars/jesia.png" alt="person-photo">
+					</div>
+					<div class="team-list__person-name">Alina Jesia</div>
+					<div class="desc team-list__person-job">UX/UI DESIGNER</div>
+					<div class="team-list__person-social">
+						<img src="img/icons/social/skype.svg" alt="skype">
+						<img src="img/icons/social/linkedin.svg" alt="linkedin">
+						<img src="img/icons/social/twitter.svg" alt="twitter">
+						<img src="img/icons/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+				<div class="team-list__person">
+					<div class="team-list__person-photo">
+						<img src="img/avatars/sohag.png" alt="person-photo">
+					</div>
+					<div class="team-list__person-name">Alex Sohag</div>
+					<div class="desc team-list__person-job">BUSINESS DEVELOPMENT</div>
+					<div class="team-list__person-social">
+						<img src="img/icons/social/skype.svg" alt="skype">
+						<img src="img/icons/social/linkedin.svg" alt="linkedin">
+						<img src="img/icons/social/twitter.svg" alt="twitter">
+						<img src="img/icons/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+				<div class="team-list__person">
+					<div class="team-list__person-photo">
+						<img src="img/avatars/mou.png" alt="person-photo">
+					</div>
+					<div class="team-list__person-name">Afroza Mou</div>
+					<div class="desc team-list__person-job">HEAD OF MARKETING</div>
+					<div class="team-list__person-social">
+						<img src="img/icons/social/skype.svg" alt="skype">
+						<img src="img/icons/social/linkedin.svg" alt="linkedin">
+						<img src="img/icons/social/twitter.svg" alt="twitter">
+						<img src="img/icons/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="subscribe" id="subscribe">
+			<h2 class="title subscribe__title">Subscribe to get the Latest News</h2>
+			<p class="desc subscribe__desc">We recommended you to subscribe to our newspaper,drop your email below to get daily update about us</p>
+			<form class="subscribe-form">
+				<input type="email" class="subscribe-form__input" placeholder="Enter your email addres">
+				<button type="submit" class="btn subscribe-form__button">
+					<img class="subscribe-form__btn-img" src="img/icons/subscribe.svg" alt="send">
+					<span class="subscribe-form__btn-text">Subscribe</span>
+				</button>
+			</form>
+		</section>
+	</div>
+	
+	<footer class="footer" id="footer">
+		<div class="container footer-info">
+			<div class="footer-info__contact">
+				<a href="#header" class="footer-info__logo">
+					<div class="footer-info__logo-img">
+						<img src="img/icons/logo.svg" alt="logo">
+					</div>
+					<h2 class="footer-info__logo-title">Zone.</h2>
+				</a>
+				<div class="footer-info__location">
+					<div>
+						<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 8.50051C11.5 7.11924 10.3808 6 9.00051 6C7.61924 6 6.5 7.11924 6.5 8.50051C6.5 9.88076 7.61924 11 9.00051 11C10.3808 11 11.5 9.88076 11.5 8.50051Z" stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.99951 19C7.80104 19 1.5 13.8984 1.5 8.56329C1.5 4.38664 4.8571 1 8.99951 1C13.1419 1 16.5 4.38664 16.5 8.56329C16.5 13.8984 10.198 19 8.99951 19Z" stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					</div>
+					<a href="https://maps.app.goo.gl/cbzvSWYjzXcnqToQ6">Dhaka, Bangladesh</a>
+				</div>
+				<div class="footer-info__phone">
+					<div>
+						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.353 1.5C17.054 1.911 19.978 4.831 20.393 8.532" stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M13.353 5.04297C15.124 5.38697 16.508 6.77197 16.853 8.54297" stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0315 11.4724C14.0205 15.4604 14.9254 10.8467 17.4653 13.3848C19.9138 15.8328 21.3222 16.3232 18.2188 19.4247C17.8302 19.737 15.3613 23.4943 6.68447 14.8197C-1.99341 6.144 1.76157 3.67244 2.07394 3.28395C5.18377 0.173846 5.66682 1.58938 8.11539 4.03733C10.6541 6.5765 6.04254 7.48441 10.0315 11.4724Z" stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					</div>
+					<a href="tel:+0943833399">0943833399</a>
+				</div>
+				<div class="footer-info__email">
+					<div>
+						<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.9026 6.85107L12.4593 10.4641C11.6198 11.1301 10.4387 11.1301 9.59919 10.4641L5.11841 6.85107" stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9089 19C18.9502 19.0084 21 16.5095 21 13.4384V6.57001C21 3.49883 18.9502 1 15.9089 1H6.09114C3.04979 1 1 3.49883 1 6.57001V13.4384C1 16.5095 3.04979 19.0084 6.09114 19H15.9089Z" stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					</div>
+					<a href="mailto:support@zone.com">support@zone.com</a>
+				</div>
+				<div class="footer-info__socials">
+					<img src="img/icons/zone_social/zone_facebook.svg" alt="facebook">
+					<img src="img/icons/zone_social/zone_twitter.svg" alt="twitter">
+					<img src="img/icons/zone_social/zone_instagram.svg" alt="instagram">
+					<img src="img/icons/zone_social/zone_pinterest.svg" alt="pinterest">
+				</div>
+			</div>
+			<div class="footer-info__nav">
+				<ul class="footer-info__ul footer-info__nav-service">
+					<li class="footer-info__li"><a href="/" class="footer-info__a footer-info__nav-title">Service</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Order Management</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Social Assistant</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Crypto Platform</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Analyzer of the News</a></li>
+				</ul>
+				<ul class="footer-info__ul footer-info__nav-company">
+					<li class="footer-info__li"><a href="/" class="footer-info__a footer-info__nav-title">Company</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">About Us</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">News</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Our trusted partner</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">New users FAQ</a></li>
+				</ul>
+				<ul class="footer-info__ul footer-info__nav-supports">
+					<li class="footer-info__li"><a href="/" class="footer-info__a footer-info__nav-title">Supports</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Help center</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Feedbcak</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Contact us</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Terms conditins</a></li>
+				</ul>
+				<ul class="footer-info__ul footer-info__nav-resources">
+					<li class="footer-info__li"><a href="/" class="footer-info__a footer-info__nav-title">Resources</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Download app</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Blog</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">What’s new</a></li>
+					<li class="footer-info__li"><a href="/" class="footer-info__a">Sitemap</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-policy">
+			<div class="container footer-policy__container">
+				<div class="footer-policy__copy">&#169; <span id="year"></span> Zone. - All rights reserved.</div>
+				<a href="/" class="footer-policy__link">Privacy</a>
+				<a href="/" class="footer-policy__link">Security</a>
+				<a href="/" class="footer-policy__link">Terms</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

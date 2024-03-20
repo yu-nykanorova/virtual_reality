@@ -1,0 +1,106 @@
+@keyframes rotate-c {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+  }
+  
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40rem;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: 8rem;
+	}
+
+	&__logo-img:hover {
+		animation: rotate-c 1s ease-in-out both;
+	}
+
+	&__logo-title {
+		font-family: var(--second-family);
+		font-weight: 500;
+		font-size: 20rem;
+		color: var(--c-text-white);
+	}
+
+	&__nav, &__ul {
+		display: flex;
+		align-items: center;
+		gap: 60rem;
+	}
+	
+	&__ul {
+		
+		@include tablet {
+			position: fixed;
+			width: 70%;
+			height: 100%;
+			z-index: 1;
+			flex-direction: column;
+			left: 0;
+			top: 0;
+			background: var(--btn-bg);
+			opacity: 0.9;
+			align-items: center;
+			justify-content: center;
+			transform: translateX(-120%);
+			transition: var(--transition);
+		}
+
+		&._active {
+			transform: translateX(0);
+		}
+
+
+
+		.icon-close {
+			position: absolute;
+			top: 60rem;
+			right: 47%;
+			color: var(--c-text-white);
+		}
+	}
+
+	&__a {
+		font-weight: 500;
+		font-size: 14rem;
+		color: var(--c-text-white-second);
+
+		@include tablet {
+			color: var(--c-text-white);
+			font-size: 30rem;
+		}
+	}
+
+	&__btn {
+		font-weight: 500;
+		font-size: 14rem;
+		color: var(--c-text-white-second);
+		padding: 12rem 24rem;
+		background: var(--btn-bg);
+		border-radius: 5rem;
+		transition: all .2s ease-in-out;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+
+
+
+.icon-menu,
+.icon-close {
+	cursor: pointer;
+	display: none;
+
+	@include tablet {
+		display: inline-block;
+	}
+}

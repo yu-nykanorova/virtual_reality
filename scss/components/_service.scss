@@ -1,0 +1,81 @@
+.service {
+    margin-bottom: 120rem;
+    text-align: center;
+
+    @include tablet {
+        margin-bottom: 70rem;
+    }
+
+
+    &__title {
+        margin-bottom: 30rem;
+     }
+    
+    &__desc { 
+        max-width: 580rem;
+        margin-inline: auto;
+        margin-bottom: 40rem;
+    }
+    
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(370rem, 1fr));
+        gap: 30rem;
+
+        &__item {
+            padding: 30rem 23rem;
+            border-radius: 34rem;
+            box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+            background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+            border: 1px solid rgba(254, 254, 255, 0.03);
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+            }
+         }
+
+        &__item-icon { 
+            margin-bottom: 19rem;
+            padding: 18rem;
+            border-radius: 55rem;
+            max-width: 74rem;
+            max-height: 74rem;
+            margin-inline: auto;
+            &#bg_checklist_ico {
+                background: linear-gradient(180deg, #8a7fd9 0%, #402f8f 100%);
+            }
+            &#bg_social-assist_ico {
+                background: linear-gradient(180deg, #d97f95 0%, #923250 100%);
+            }
+            &#bg_bitcoin_ico {
+                background: linear-gradient(180deg, #84d8ed 0%, #4292bb 100%);
+            }
+            &#bg_smart-trade_ico {
+                background: linear-gradient(180deg, #92efc3 0%, #2f8f5b 100%);
+            }
+            &#bg_analyzer_ico {
+                background: linear-gradient(180deg, #bc7fd9 0%, #923283 100%);
+            }
+            &#bg_price-module_ico {
+                background: linear-gradient(180deg, #8684ed 0%, #4247bb 100%);
+            }
+        }
+
+        &__item-title { 
+            margin-bottom: 17rem;
+            font-weight: 500;
+            font-size: 24rem;
+        }
+
+        &__item-desc {
+            margin-bottom: 24rem;
+         }
+
+        &__item-forward {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8rem;
+         }
+    }
+}

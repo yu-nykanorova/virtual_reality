@@ -1,0 +1,88 @@
+.subscribe {
+    padding: 50rem 155rem 38rem;
+    margin-bottom: 98rem;
+    border-radius: 34rem;
+    text-align: center;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(254, 254, 255, 0.03);
+
+    @include mobile {
+        padding: 40rem 80rem;
+    }    
+
+    &__title { 
+        margin-bottom: 13rem;
+    }
+
+	&__desc { 
+        font-family: var(--third-family);
+        line-height: 187%;
+        margin-bottom: 29rem;
+    }
+
+    &-form {
+        max-width: 860rem;
+        padding: 10rem 10rem 10rem 44rem;
+        background: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%);
+        box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+        border-radius: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15rem;
+
+        &__input {
+            background: transparent;
+            border: none;
+            width: 100%;
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 18rem;
+            color: var(--c-text-white);
+
+            &::placeholder {
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 18rem;
+                line-height: 167%;
+                color: var(--c-footer-white);
+            }
+         }
+
+        &__button {
+            display: flex;
+            align-items: center;
+            gap: 8rem;
+            padding: 15rem 49rem 15rem 25rem;
+            background: var(--btn-bg);
+            opacity: 0.9;
+            border-radius: 70rem;
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            @include mobile {
+                padding: 15rem 25rem;
+                justify-content: center;
+            }
+         }
+        &__btn-img {
+
+       }
+
+        &__btn-text {
+            font-family: var(--second-family);
+            font-weight: 500;
+            font-size: 20rem;
+            line-height: 150%;
+            text-align: center;
+            color: var(--c-text-white);
+
+            @include mobile {
+                display: none;
+            }
+         }
+    }
+}
+

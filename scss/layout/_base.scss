@@ -1,0 +1,45 @@
+html {
+	font-size: 1px;
+
+	@include tablet {
+		font-size: 0.7px;
+	}
+}
+
+body {
+	font-family: var(--font-family);
+	background: #111827;
+	color: #fff;
+	font-size: 16rem;
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	cursor: pointer;
+	outline: 0;
+	font-family: var(--font-family);
+}
+
+.container {
+	max-width: 1170rem + 40rem;
+	padding: 0 20rem;
+	margin-inline: auto;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 42rem;
+	color: var(--c-text-white);
+
+	@include mobile {
+		font-size: 36rem;
+	}
+}
+
+.desc {
+	font-weight: 400;
+	font-size: 16rem;
+	line-height: 162%;
+	color: var(--c-text-white);
+}

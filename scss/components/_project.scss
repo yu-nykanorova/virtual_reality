@@ -1,0 +1,72 @@
+.project {
+	display: grid;
+	gap: 57rem;
+	margin-bottom: 107rem;
+	perspective: 1000px;
+
+	@include mobile {
+		margin-bottom: 80rem;
+	}
+
+	&-item {
+		display: flex;
+		align-items: center;
+		gap: 35rem;
+		justify-content: space-between;
+
+		@include tablet {
+			flex-direction: column;
+		}
+
+		&:nth-child(even) {
+			.project-item__img {
+				order: 2;
+			}
+
+			@include tablet {
+				flex-direction: column-reverse;
+			}
+
+		}
+
+		&__img {
+			flex-basis: 548rem;
+			max-width: 557rem;
+
+			@include tablet {
+				flex-basis: initial;
+			}
+		}
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			gap: 30rem;
+			align-items: flex-start;
+			max-width: 582rem;
+
+			@include tablet {
+				max-width: 100%;
+			}
+		}
+
+		&__title {
+			
+			@include tablet {
+				font-size: 26rem;
+			}
+		}
+		
+		&__btn {
+			background: var(--btn-bg);
+			border-radius: 4rem;
+			font-weight: 400;
+			font-size: 14rem;
+			padding: 7rem 15rem;
+			transition: all .2s ease-in-out;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

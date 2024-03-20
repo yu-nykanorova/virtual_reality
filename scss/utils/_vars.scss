@@ -1,0 +1,22 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+
+:root {
+	--font-family: "DM Sans", sans-serif;
+	--second-family: "Rubik", sans-serif;
+	--third-family: "Roboto", sans-serif;
+
+	--transition: .2s all ease-in-out;
+
+	--c-primary: #0b8fed;
+	--c-text-white: #fff;
+	--c-text-white-second: #f9fafb;
+	--c-border: #eee;
+	--c-footer-white: rgba(255, 255, 255, 0.8);
+
+	--btn-bg: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+}
