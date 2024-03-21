@@ -19,8 +19,13 @@
 		gap: 8rem;
 	}
 
-	&__logo-img:hover {
-		animation: rotate-c 1s ease-in-out both;
+	&__logo-img {
+		transition: var(--transition);
+		max-width: 35rem;
+		max-height: 35rem;
+		&:hover {
+			animation: rotate-c 1s ease-in-out both;
+		}
 	}
 
 	&__logo-title {
@@ -57,9 +62,7 @@
 		&._active {
 			transform: translateX(0);
 		}
-
-
-
+		
 		.icon-close {
 			position: absolute;
 			top: 60rem;
@@ -68,10 +71,21 @@
 		}
 	}
 
+	&__li {
+		transition: var(--transition);
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
 	&__a {
 		font-weight: 500;
 		font-size: 14rem;
 		color: var(--c-text-white-second);
+		transition: var(--transition);
+		&:hover {
+			color: var(--c-text-white);
+		}
 
 		@include tablet {
 			color: var(--c-text-white);
@@ -86,14 +100,12 @@
 		padding: 12rem 24rem;
 		background: var(--btn-bg);
 		border-radius: 5rem;
-		transition: all .2s ease-in-out;
+		transition: var(--transition);
 		&:hover {
 			transform: scale(1.05);
 		}
 	}
 }
-
-
 
 .icon-menu,
 .icon-close {

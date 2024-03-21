@@ -32,8 +32,13 @@
 			margin-bottom: 15rem;
 		}
 
-		&__logo-img:hover {
-			animation: rotate-c 1s ease-in-out both;
+		&__logo-img {
+			transition: var(--transition);
+			max-width: 35rem;
+			max-height: 35rem;
+			&:hover {
+				animation: rotate-c 1s ease-in-out both;
+			}
 		}
 
 		&__logo-title {
@@ -56,6 +61,11 @@
 			color: var(--c-footer-white);
 		}
 
+		&__location div, &__phone div, &__email div {
+			display: flex;
+			align-items: center;
+		}
+
 		&__email {
 			margin-bottom: 15rem;
 		}
@@ -65,8 +75,17 @@
 			align-items: center;
 			justify-content: space-between;
 			gap: 15rem;
-			img {
-				max-width: 33rem;
+			transition: var(--transition);
+			a svg {
+				max-width: 32rem;
+				max-height: 32rem;
+			}
+
+			& a:hover {
+				transform: scale(1.2);
+				svg path {
+					fill: var(--c-primary);
+				}
 			}
 		}
 
@@ -97,6 +116,11 @@
 		}
 
 		&__li {
+
+			&:hover:not(:first-child) {
+				transform: scale(1.02);
+			}
+
 			@include mobile {
 				text-align: center;
 			}
@@ -109,6 +133,10 @@
 			letter-spacing: 0.01em;
 			color: var(--c-footer-white);
 			white-space: nowrap;
+
+			&:hover:not(.footer-info__nav-title) {
+				color: var(--c-text-white);
+			}
 
 			@include desktop-small {
 				white-space: normal;
@@ -125,6 +153,7 @@
 
 		&__nav-title {
 			font-weight: 500;
+			cursor: initial;
 		}
 	}
 	
